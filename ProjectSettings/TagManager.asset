@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Player01_Deck
   - Player02_Deck
+  - Dice
   layers:
   - Default
   - TransparentFX

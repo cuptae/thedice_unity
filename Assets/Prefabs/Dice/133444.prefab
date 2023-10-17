@@ -82,7 +82,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 24, y: 25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -117,8 +117,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 24, y: 25}
+    newSize: {x: 24, y: 25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -159,16 +159,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec46e260e829191469aa8c7ac6aa024c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diceIcon: {fileID: 21300000, guid: 2da62b7034165e44898cd7ce713be50a, type: 3}
   IDNUM: 54
   DiceID: 0
   Rank: 0
   Mark: 
-  Dice_side:
+  diceside:
   - {fileID: 21300000, guid: 21377d44a1ca5304da264f0fc4e30693, type: 3}
+  - {fileID: 21300000, guid: 639b4e9215b579e4ab57aa7dc310b54d, type: 3}
   - {fileID: 21300000, guid: 5e3929b791695c54d933372528cc7e48, type: 3}
-  - {fileID: 21300000, guid: 5e3929b791695c54d933372528cc7e48, type: 3}
-  - {fileID: 21300000, guid: 447216073b36108429e8d7e69c83bf79, type: 3}
-  - {fileID: 21300000, guid: 447216073b36108429e8d7e69c83bf79, type: 3}
   - {fileID: 21300000, guid: 447216073b36108429e8d7e69c83bf79, type: 3}
   deck: {fileID: 0}
+  player: {fileID: 0}
   dicenum: 0

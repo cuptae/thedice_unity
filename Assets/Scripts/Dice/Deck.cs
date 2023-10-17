@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
 using Random = UnityEngine.Random;
@@ -14,19 +15,19 @@ public class Deck : MonoBehaviour
     [SerializeField]
     private Transform deck_position;
     [SerializeField]
-    public  Transform board;
+    private DeckData deckdata;
 
+    private List<Dice> DeckList = new List<Dice>();
     private Dice dice;
-
     private void Start()
     {
-        for (int i = 0; i < deck_position.childCount; i++)
+        DeckList = deckdata.diceList;
+        for (int i = 0; i < 15; i++)
         {
-            Transform diceTransform = deck_position.GetChild(i);
-            dice = diceTransform.GetComponent<Dice>();
+            dice = Instantiate(DeckList[i], deck_position);
             diceList.Add(dice);
         }
-        //Shuffle();
+        Shuffle();
     }
     private void Shuffle()
     {
